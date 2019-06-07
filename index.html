@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Only By The Night: Online Album</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
+
+    <div id="container">
+        <div id="audio-img">
+            <img class="cover">
+        </div>
+
+        <div id="audio-player">
+            <div id="audio-info">
+                <span class="artist"></span> - <span class="title"></span>
+            </div>
+            <input id="volume" type="range" min="0" max="10" value="5">
+            <br>
+
+            <div id="audio-button">
+                <button id="previous"></button>
+                <button id="play"></button>
+                <button id="pause"></button>
+                <button id="stop"></button>
+                <button id="next"></button>
+            </div>
+
+            <!-- clearing div alignment -->
+            <div class="clearfix"></div>
+            <div id="tracker">
+                <div id="progress-bar">
+                    <span id="progress"></span>
+                </div>
+                <span id="duration"></span>
+            </div>
+
+            <div class="clearfix"></div>
+            <ul id="playlist">
+                <li song="Closer" cover="obtn.png" artist="Kings Of Leon">Closer</li>
+                <li song="Crawl" cover="obtn.png" artist="Kings Of Leon">Crawl</li>
+                <li song="Sex On Fire" cover="obtn.png" artist="Kings Of Leon">Sex On Fire</li>
+                <li song="Use Somebody" cover="obtn.png" artist="Kings Of Leon">Use Somebody</li>
+                <li song="Manhattan" cover="obtn.png" artist="Kings Of Leon">Manhattan</li>
+                <li song="Revelry" cover="obtn.png" artist="Kings Of Leon">Revelry</li>
+                <li song="17" cover="obtn.png" artist="Kings Of Leon">17</li>
+                <li song="Notion" cover="obtn.png" artist="Kings Of Leon">Notion</li>
+                <li song="I Want You" cover="obtn.png" artist="Kings Of Leon">I Want You</li>
+                <li song="Be Somebody" cover="obtn.png" artist="Kings Of Leon">Be Somebody</li>
+                <li song="Cold Desert" cover="obtn.png" artist="Kings Of Leon">Cold Desert</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

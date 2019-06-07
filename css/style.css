@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body{
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #fff;
+    background: url("../images/susan-yin.jpg");
+    background-size: cover;
+}
+
+.clearfix{
+    clear: both;
+}
+#container{
+    width: 330px;
+    min-height: 400px;
+    background: #A9A9A9;
+    overflow: auto;
+    margin: 60px auto;
+    border: #8c8c8c solid 1.5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* generate by javascript */
+#audio-img{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 200px;
+}
+#audio-info{
+    text-align: center;
+}
+#audio-info .artist{
+    font-weight: bold;
+}
+
+.cover{
+    width: 100%;
+    z-index: 1
+}
+
+input#volume{
+    background: #ccc;
+    width: 95%;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    height: 1px;
+    -webkit-appearance: none !important;
+}
+
+input#volume::-webkit-slider-thumb{
+    -webkit-appearance: none !important;
+    background: url(../images/knob.png) no-repeat;
+    height: 12px;
+    width: 12px;
+}
+
+#audio-button{
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+    margin-left: 23px;
+    overflow: auto;
+}
+button#play{
+    width: 70px;
+    height: 70px;
+    background:url(../images/play.png) no-repeat;
+    float: left;
+}
+button#pause{
+    width: 70px;
+    height: 70px;
+    background:url(../images/pause.png) no-repeat;
+    float: left;
+}
+button#stop{
+    width: 70px;
+    height: 70px;
+    background:url(../images/stop.png) no-repeat;
+    float: left;
+}
+button#previous{
+    width: 70px;
+    height: 70px;
+    background:url(../images/prev.png) no-repeat;
+    float: left;
+    margin-top: 15px;
+}
+button#next{
+    width: 70px;
+    height: 70px;
+    background:url(../images/next.png) no-repeat;
+    float: right;
+    margin-top: 15px;
+}
+#playlist{
+    list-style: none;
+    padding: 10px;
+}
+#playlist li{
+    cursor: pointer;
+    margin: 5px;
+}
+#playlist li.active{
+    font-weight: bold;
+    padding: 3px;
+    background: #666;
+}
+
+#progress-bar{
+    width: 80%;
+    margin-left: 2%;
+    margin-top: 9px;
+    height: 10px;
+    background:url(../images/progress_bar.png) no-repeat;
+}
+
+#progress{
+    background: url(../images/progress.png) no-repeat;
+    height: 10px;
+    display: inline-block;
+}
+
+#duration{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 4px 8px;
+    background: black;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#tracker{
+    position: relative;
+    width: 100%;
+}
